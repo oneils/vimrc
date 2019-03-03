@@ -1,7 +1,8 @@
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.vim/plugged')
+" call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/autoload/plug.vim')
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tomasiser/vim-code-dark'
@@ -12,6 +13,7 @@ Plug 'tpope/vim-fugitive' " Plugin page: https://github.com/tpope/vim-fugitive
 Plug 'airblade/vim-gitgutter'
 Plug 'kien/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
