@@ -133,7 +133,6 @@ Ctrl + B + arrows - move between tmux screens
 
 ```
 Ctrl + B:resize-pane -L 20 - decrease current window to 20 to left
-```
 
 `Ctrl + B:source-file ~/.tmux.conf` - reload tmux config file
 `Ctrl + B + n` - create a new tmux window
@@ -141,7 +140,7 @@ Ctrl + B:resize-pane -L 20 - decrease current window to 20 to left
 `Ctrl + B + $` - rename current tmux's session
 
 `tmux attach -t session_name` - attach to specified session with name `session_name`
-
+```
 
 
 
