@@ -138,6 +138,10 @@ Using hotkeys
 Ctrl + B + % -  split screen vertically
 Ctrl + B + " - split screen horizantally"
 Ctrl + B + arrows - move between tmux screens
+Ctrl + B + o - swap panes
+Ctrl + B + q - show panes numbers
+Ctrl + B + x - kill pane
+Ctrl + B + space - toggle between layouts
 ```
 
 ## Resize tmux windows
@@ -155,4 +159,4 @@ Ctrl + B:resize-pane -L 20 - decrease current window to 20 to left
 
 ## Additional useful links
 
-[Platform IO for Vim](https://docs.platformio.org/en/latest/ide/vim.html)
+Platform IO for Vim](https://docs.platformio.org/en/latest/ide/vim.html)
