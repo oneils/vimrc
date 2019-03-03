@@ -28,10 +28,17 @@ set expandtab  "Always uses spaces instead of tabs
 
 set softtabstop=4 "Insert 4 spaces when tab is pressed
 set shiftwidth=4 "An indent is 4 spaces
+set tabstop=4
+set expandtab
+set smarttab
 
 set hlsearch
 set incsearch
 
+" set listchars
+" set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+set listchars=tab:▒░,trail:▓
+set list
 " Key mappings
 
 map <C-n> :NERDTreeToggle<CR>
