@@ -1,4 +1,15 @@
+# About
 
+This is a small cheet shet for using `vim`, `neo vim` and `tmux`. Also this repository contains configuration files for mentioned tools.
+
+In order some Plugins are able to work, `pip3` and `pynvim` should be intalled via
+
+```bash
+sudo pip3 install --upgrade pynvim
+```
+How to install `pip3` see instructions for appropriate OS.
+
+## Vim hot keys
 
 ```
 h - move left
