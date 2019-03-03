@@ -118,3 +118,30 @@ Using hotkeys
  Ctrl + l opens a new window at left or switch to lelft window
  Ctrl + j opens a new window at bottom or switch to the bottom window
 ``` 
+
+## Tmux
+
+`tmux` will run a new tmux
+
+```
+ + % -  split screen vertically
+ + " - split screen horizantally"
+ + arrows - move between tmux screens
+```
+
+## Resize tmux windows
+
+```
+:resize-pane -L 20 - decrease current window to 20 to left (where ^B - is a Ctrl + B)
+```
+
+`:source-file ~/.tmux.conf` - reload tmux config file
+`n` - create a new tmux window
+`1` - move to the 1st window
+`$` - rename current tmux's session
+
+`tmux attach -t session_name` - attach to specified session with name `session_name`
+
+
+
+
