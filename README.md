@@ -155,5 +155,5 @@ Ctrl + B:resize-pane -L 20 - decrease current window to 20 to left
 
 ## Additional useful links
 
-PlatformIO for Vim: https://docs.platformio.org/en/latest/ide/vim.html
+[Platform IO for Vim]{https://docs.platformio.org/en/latest/ide/vim.html}
 
