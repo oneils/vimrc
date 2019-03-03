@@ -14,6 +14,11 @@ Plug 'airblade/vim-gitgutter'
 Plug 'kien/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/fzf.vim'
+" Plug 'Chiel92/vim-autoformat'
+Plug 'sbdchd/neoformat'
+Plug 'vim-scripts/Arduino-syntax-file'
+Plug 'vim-syntastic/syntastic'
+Plug 'shime/vim-livedown'
 
 call plug#end()
 
@@ -56,11 +61,22 @@ function! WinMove(key)
     exec "wincmd ".a:key
     if(t:curwin == winnr())
         if (match(a:key, '[jk]'))
-          wincmd v
+            wincmd v
         else
-          wincmd s
+            wincmd s
         endif
         exec "wincmd ".a:key
     endif
 endfunction
 
+" COnfig for vim-syntastic/syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+nnoremap <C-b> :make<CR>
