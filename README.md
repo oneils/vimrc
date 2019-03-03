@@ -41,7 +41,7 @@ P - paste copied(deleted) text before current line
 ```
 gg - move cursor at the begging of the file
 G  - move cursor at the ent of the file
-w  - mote to the next word
+w  - move to the next word
 b  - move to the word back (backword)
 e  - move to the end of the next word
 dd - delete current line
