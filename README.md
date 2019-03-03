@@ -35,6 +35,7 @@ b  - move to the word back (backword)
 e  - move to the end of the next word
 dd - delete current line
 %  - move to the pair symbol (braces, etc)
+20gg - will move cursor to specified line number 20
 ```
 
 ## Repeat command
