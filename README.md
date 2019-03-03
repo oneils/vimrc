@@ -1,4 +1,4 @@
- # Vim tricks
+
 
 ```
 h - move left
@@ -124,21 +124,21 @@ Using hotkeys
 `tmux` will run a new tmux
 
 ```
- + % -  split screen vertically
- + " - split screen horizantally"
- + arrows - move between tmux screens
+Ctrl + B + % -  split screen vertically
+Ctrl + B + " - split screen horizantally"
+Ctrl + B + arrows - move between tmux screens
 ```
 
 ## Resize tmux windows
 
 ```
-:resize-pane -L 20 - decrease current window to 20 to left (where ^B - is a Ctrl + B)
+Ctrl + B:resize-pane -L 20 - decrease current window to 20 to left
 ```
 
-`:source-file ~/.tmux.conf` - reload tmux config file
-`n` - create a new tmux window
-`1` - move to the 1st window
-`$` - rename current tmux's session
+`Ctrl + B:source-file ~/.tmux.conf` - reload tmux config file
+`Ctrl + B + n` - create a new tmux window
+`Ctrl + B + 1` - move to the 1st window
+`Ctrl + B + $` - rename current tmux's session
 
 `tmux attach -t session_name` - attach to specified session with name `session_name`
 
