@@ -1,0 +1,36 @@
+" Specify a directory for plugins
+" - For Neovim: ~/.local/share/nvim/plugged
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tomasiser/vim-code-dark'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes' " other themes https://github.com/vim-airline/vim-airline/wiki/Screenshots
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-fugitive' " Plugin page: https://github.com/tpope/vim-fugitive
+Plug 'airblade/vim-gitgutter'
+Plug 'kien/ctrlp.vim'
+Plug 'easymotion/vim-easymotion'
+
+call plug#end()
+
+" END  OF vim-plug configuration
+
+syntax on
+let g:mapleader=','
+colorscheme codedark " https://github.com/tomasiser/vim-code-dark#installation
+
+set number
+set expandtab  "Always uses spaces instead of tabs
+
+set softtabstop=4 "Insert 4 spaces when tab is pressed
+set shiftwidth=4 "An indent is 4 spaces
+
+set hlsearch
+set incsearch
+
+" Key mappings
+
+map <C-n> :NERDTreeToggle<CR>
+map <Leader> <Plug>(easymotion-prefix)
