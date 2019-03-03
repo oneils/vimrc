@@ -153,5 +153,7 @@ Ctrl + B:resize-pane -L 20 - decrease current window to 20 to left
 `tmux attach -t session_name` - attach to specified session with name `session_name`
 ```
 
+## Additional useful links
 
+PlatformIO for Vim: https://docs.platformio.org/en/latest/ide/vim.html
 
