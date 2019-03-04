@@ -12,14 +12,23 @@ Plug 'tpope/vim-fugitive' " Plugin page: https://github.com/tpope/vim-fugitive
 Plug 'airblade/vim-gitgutter'
 Plug 'kien/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
+Plug 'junegunn/fzf.vim'
 
+Plug 'sbdchd/neoformat'
+Plug 'vim-scripts/Arduino-syntax-file'
+Plug 'vim-syntastic/syntastic'
+Plug 'shime/vim-livedown'
+Plug 'vim-airline/vim-airline'
+Plug 'stephpy/vim-yaml'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 " END  OF vim-plug configuration
 
 syntax on
 let g:mapleader=','
-colorscheme codedark " https://github.com/tomasiser/vim-code-dark#installation
+colorscheme gruvbox
+" colorscheme codedark " https://github.com/tomasiser/vim-code-dark#installation
 
 set number
 set expandtab  "Always uses spaces instead of tabs

@@ -19,6 +19,9 @@ Plug 'sbdchd/neoformat'
 Plug 'vim-scripts/Arduino-syntax-file'
 Plug 'vim-syntastic/syntastic'
 Plug 'shime/vim-livedown'
+Plug 'vim-airline/vim-airline'
+Plug 'stephpy/vim-yaml'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -27,6 +30,7 @@ call plug#end()
 syntax on
 let g:mapleader=','
 colorscheme codedark " https://github.com/tomasiser/vim-code-dark#installation
+let g:airline_theme = 'codedark'
 
 set number
 set expandtab  "Always uses spaces instead of tabs
@@ -45,6 +49,8 @@ set incsearch
 set listchars=tab:▒░,trail:▓
 set list
 " Key mappings
+
+set mouse=a
 
 map <C-n> :NERDTreeToggle<CR>
 map <Leader> <Plug>(easymotion-prefix)
