@@ -36,7 +36,8 @@ dd - delete (cutting) the line
 p - paste copied(deleted) text after current line
 P - paste copied(deleted) text before current line
 ```
-## Movements
+
+## Navigation
 
 ```
 gg - move cursor at the begging of the file
@@ -46,7 +47,18 @@ b  - move to the word back (backword)
 e  - move to the end of the next word
 dd - delete current line
 %  - move to the pair symbol (braces, etc)
+
+`. - move cursor to the last edit position
+` + symbol - go to saved bookmark, whene symbol - the name (signle charachter) for bookmark`
+`D - go to the global bookmark`
+gf - go the file under current cursor (e.g. new File(./my-file.txt) will go to the my-file.txt in case if such file exists into current path)
+Ctrl + g - shos wyour location in the file and the file status.
+G - move cursor to the end of file
+gg - move cursor to the beginning of the file
 20gg - will move cursor to specified line number 20
+
+Ctrl + O - returns back to the place where cursor was before search
+
 ```
 
 ## Repeat command
@@ -67,8 +79,26 @@ T + symbol - find the specified symbol and move cursor befor it backward
 * - find thw word unser cursor (all found words in the file will be selected)
 \ - ignore a symbol during the search
 noh - turn the highlight off for the found word
-dt + symbol - selete everything befor specified symbol
+dt + symbol - delete everything befor specified symbol
 df + symbol - delete everything before the specified symbol
+```
+
+## Replace
+
+```
+s/old/new - replaces first matching of `old` text with `new` value into current line
+s/old/new/g - replaces all matches of `old` text with `new` value into current line
+#,#s/old/new/g - changes every occurrence of a character string between two lines, where #,# are the line numbers of the range
+%s/old/new/g   - changes every occurrence in the whole file
+%s/old/new/gc - to find every occurrence in the whole file, with a prompt whether to substitute or not
+```
+
+## Edit
+
+```
+r + symbol - replace char under cursor by specified symbol
+ce - change text from cursor to the end of the word
+c$ - change text from cursor to the end of line.
 ```
 
 ## Find into project's files
@@ -83,15 +113,6 @@ cprev - go to prev found matches
 
 `grep` found all matches and display found results into terminal without vim integration.
 
-
-## Navigation
-
-```
-`. - move cursor to the last edit position
-` + symbol - go to saved bookmark, whene symbol - the name (signle charachter) for bookmark`
-`D - go to the global bookmark`
-gf - go the file under current cursor (e.g. new File(./my-file.txt) will go to the my-file.txt in case if such file exists into current path)
-```
 
 ## Bookmarks
 
@@ -110,7 +131,7 @@ function looks like
  function! WinMove(key)
      let t:curwin = winnr()
      exec "wincmd ".a:key
-     if(t:curwin == winnr())
+     if(t:curwin == winnr())<LeftMouse>
          if (match(a:key, '[jk]'))
            wincmd v
          else
@@ -128,7 +149,7 @@ Using hotkeys
  Ctrl + h opens a new window at right or switch to the right window
  Ctrl + l opens a new window at left or switch to lelft window
  Ctrl + j opens a new window at bottom or switch to the bottom window
-``` 
+```
 
 ## Tmux
 
@@ -149,14 +170,14 @@ Ctrl + B + space - toggle between layouts
 ```
 Ctrl + B:resize-pane -L 20 - decrease current window to 20 to left
 
-`Ctrl + B:source-file ~/.tmux.conf` - reload tmux config file
-`Ctrl + B + n` - create a new tmux window
-`Ctrl + B + 1` - move to the 1st window
-`Ctrl + B + $` - rename current tmux's session
+Ctrl + B:source-file ~/.tmux.conf` - reload tmux config file
+Ctrl + B + n - create a new tmux window
+Ctrl + B + 1 - move to the 1st window
+Ctrl + B + $ - rename current tmux's session
 
-`tmux attach -t session_name` - attach to specified session with name `session_name`
+tmux attach -t session_name - attach to specified session with name `session_name`
 ```
 
 ## Additional useful links
 
-Platform IO for Vim](https://docs.platformio.org/en/latest/ide/vim.html)
+[Platform IO for Vim](https://docs.platformio.org/en/latest/ide/vim.html)
