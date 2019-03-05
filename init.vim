@@ -33,6 +33,7 @@ colorscheme codedark " https://github.com/tomasiser/vim-code-dark#installation
 let g:airline_theme = 'codedark'
 
 set number
+set cursorline
 set expandtab  "Always uses spaces instead of tabs
 
 set softtabstop=4 "Insert 4 spaces when tab is pressed

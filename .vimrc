@@ -28,9 +28,12 @@ call plug#end()
 syntax on
 let g:mapleader=','
 colorscheme gruvbox
+let g:gruvbox__contrast = 'hard'
 " colorscheme codedark " https://github.com/tomasiser/vim-code-dark#installation
 
 set number
+set cursorline
+
 set expandtab  "Always uses spaces instead of tabs
 
 set softtabstop=4 "Insert 4 spaces when tab is pressed

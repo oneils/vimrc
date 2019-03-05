@@ -35,6 +35,7 @@ dd - delete (cutting) the line
 
 p - paste copied(deleted) text after current line
 P - paste copied(deleted) text before current line
+yw - copies a word under cursor
 ```
 
 ## Navigation
@@ -58,6 +59,7 @@ gg - move cursor to the beginning of the file
 20gg - will move cursor to specified line number 20
 
 Ctrl + O - returns back to the place where cursor was before search
+j$ - move cursor to the end of the next line
 
 ```
 
@@ -74,6 +76,10 @@ F + symbol - fund specified `symbol` back
 n - find next matching search result (used with /). This uses word Case.
 N - navigate Up to the next found word
 ? + any symbol  to find `symbol` at the whole document from bottom to top.
+
+:set ic - option for ignoring case during the search
+:set hls is - highlights found words
+
 t + symbol_to_be_find go to position before searching symbol, whe symbol_to_be_find is a symbol which were looking for
 T + symbol - find the specified symbol and move cursor befor it backward
 * - find thw word unser cursor (all found words in the file will be selected)
@@ -83,6 +89,20 @@ dt + symbol - delete everything befor specified symbol
 df + symbol - delete everything before the specified symbol
 ```
 
+### Additional notes
+
+NOTE:  To remove the highlighting of matches enter:   :nohlsearch
+NOTE:  If you want to ignore case for just one search command, use  \c
+       in the phrase:  /ignore\c  <ENTER>
+
+Some usefull set commands:
+
+```
+ic - 'ignorecase'       ignore upper/lower case when searching
+is - 'incsearch'        show partial matches for a search phrase
+hls - 'hlsearch'        highlight all matching phrases
+```
+
 ## Replace
 
 ```
@@ -90,7 +110,7 @@ s/old/new - replaces first matching of `old` text with `new` value into current 
 s/old/new/g - replaces all matches of `old` text with `new` value into current line
 #,#s/old/new/g - changes every occurrence of a character string between two lines, where #,# are the line numbers of the range
 %s/old/new/g   - changes every occurrence in the whole file
-%s/old/new/gc - to find every occurrence in the whole file, with a prompt whether to substitute or not
+:%s/old/new/gc - to find every occurrence in the whole file, with a prompt whether to substitute or not
 ```
 
 ## Edit
