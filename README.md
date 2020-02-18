@@ -9,6 +9,11 @@ sudo pip3 install --upgrade pynvim
 ```
 How to install `pip3` see instructions for appropriate OS.
 
+## Vim plugin is used
+
+Used the following vim plugin: https://github.com/junegunn/vim-plug
+
+
 ## Vim hot keys
 
 ```
