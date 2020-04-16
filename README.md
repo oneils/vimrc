@@ -9,11 +9,21 @@ sudo pip3 install --upgrade pynvim
 ```
 How to install `pip3` see instructions for appropriate OS.
 
+
 ## Vim and NeoVim plugin is used
 
 Used the following vim plugin: https://github.com/junegunn/vim-plug
 
-## Nvim 
+## Neo vim 
+
+### Aliases for Neovim 
+
+Add to `.bashrc` or `.zshrc` 
+
+```bash
+alias vim="nvim"
+alias vi="nvim"
+```
 
 Nvim uses config file at: `~/.config/nvim/init.vim`
 
