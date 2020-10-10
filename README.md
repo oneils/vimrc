@@ -1,5 +1,8 @@
 # About
 
+This repo is in read only mode. It was moved to https://github.com/oneils/dotfiles
+
+
 This is a small cheet shet for using `vim`, `neo vim` and `tmux`. Also this repository contains configuration files for mentioned tools.
 
 In order some Plugins are able to work, `pip3` and `pynvim` should be intalled via
